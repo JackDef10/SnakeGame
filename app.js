@@ -39,6 +39,18 @@ const drawGame = () =>{
     drawApple();
     drawSnake();
     drawScore();
+
+    if(score > 2){
+        speed = 11;
+    }
+    if(score > 5){
+        speed = 15;
+    }
+    if(score > 20){
+        speed = 20;
+    }
+   
+
     setTimeout(drawGame, 1000/ speed);
 }
 
